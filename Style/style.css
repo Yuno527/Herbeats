@@ -1,0 +1,158 @@
+body{
+    background-color: #4a4f4d;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #31322f;
+    z-index: 1000;
+    
+}
+
+nav #Logo{
+    height: 4em;
+    width: 4em;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-family: cursive;
+    text-decoration: none;
+    color: #ccc;
+    margin-right: 2rem;
+}
+
+.contenedor-carta{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 120px 40px 40px;
+    box-sizing: border-box;
+}
+
+.carta{
+    background: #efede9;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 10px;
+}
+
+.carta img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.carta h3{
+    font-size: 16px;
+    color: #111;
+    margin: 5px 0;
+}
+
+.carta p{
+    margin: 4px 0;
+    font-size: clamp(12px, 1.8vw, 14px);
+    color: #555;
+}
+
+
+
+.contenedor-contactanos {
+    background: #dcdcdc; 
+    padding: 40px;
+    text-align: center;
+    border: 10px solid #3d3d3d; 
+    max-width: 700px; 
+    margin: 100px auto; 
+    border-radius: 12px;
+}
+
+
+.contenedor-contactanos h2,
+.redes-sociales h3 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+.contactanos-info {
+    margin: 25px 0;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 22px;
+}
+
+.contactanos-info label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contactanos-info span {
+    background: #c0c0c0; 
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-style: italic;
+    display: inline-block;
+}
+
+
+.redes-sociales {
+    margin-top: 35px;
+}
+
+.redes-sociales h3 {
+    margin-bottom: 25px;
+}
+
+.redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.redes-sociales a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+.redes-sociales .facebook {
+    background: blue;
+}
+
+.redes-sociales .x {
+    background: black;
+}
+
+.redes-sociales .instagram {
+    background: #c13584;
+}
